@@ -1134,5 +1134,23 @@ namespace ScintillaNET_FindReplaceDialog
         }
 
         #endregion Methods
+
+        private void mnuRegExCharFindF_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            //Insert the string value held in the menu items Tag field (\t, \n, etc.)
+            txtFindF.SelectedText = e.ClickedItem.Tag.ToString();
+        }
+
+        private void mnuRegExCharFindR_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            //Insert the string value held in the menu items Tag field (\t, \n, etc.)
+            txtFindR.SelectedText = e.ClickedItem.Tag.ToString();
+        }
+
+        private void mnuRegExCharReplace_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            //Insert the string value held in the menu items Tag field (\t, \n, etc.)
+            txtReplace.SelectedText = e.ClickedItem.Tag.ToString();
+        }
     }
 }
