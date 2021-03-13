@@ -1,7 +1,7 @@
-﻿using System.Drawing;
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using SwqlStudio.Utils;
 
 namespace SwqlStudio
 {
@@ -9,7 +9,7 @@ namespace SwqlStudio
     {
         public About()
         {
-            this.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+            DpiHelper.FixFont(this);
             InitializeComponent();
 
             var assembly = Assembly.GetEntryAssembly();
